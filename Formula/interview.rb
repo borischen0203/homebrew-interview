@@ -5,29 +5,29 @@
 class Interview < Formula
   desc "A tool to generate interview question!"
   homepage "https://github.com/borischen0203/interview"
-  version "0.0.7"
+  version "0.0.8"
   license "MIT"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/borischen0203/interview/releases/download/v0.0.7/interview_0.0.7_macOS-64bit.tar.gz"
-      sha256 "56bde6a9106e7e77de19a866beff6bb12ea0851e67a86d05d7709c61184134d9"
+      url "https://github.com/borischen0203/interview/releases/download/v0.0.8/interview_0.0.8_macOS-64bit.tar.gz"
+      sha256 "a10bd119555613ca4de2110ee422c6fb859991a8b6cfe07206a9fa3848cc7922"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/borischen0203/interview/releases/download/v0.0.7/interview_0.0.7_macOS-ARM64.tar.gz"
-      sha256 "85a6ff9d712eb860b829d37a9aacd359fa8aaea830a2d7dbd43107601c12c7ab"
+      url "https://github.com/borischen0203/interview/releases/download/v0.0.8/interview_0.0.8_macOS-ARM64.tar.gz"
+      sha256 "0396dd32d99ed6845aa11df85286ac0eb6ec8e412f157fc45014fbca281cceed"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/borischen0203/interview/releases/download/v0.0.7/interview_0.0.7_Linux-64bit.tar.gz"
-      sha256 "d92525d998a862f57f883733b1463475b4ce9bb61832671e554790316b3cec3c"
+      url "https://github.com/borischen0203/interview/releases/download/v0.0.8/interview_0.0.8_Linux-64bit.tar.gz"
+      sha256 "e29601587d882aa8a4ba9fb4822136fcbf229a258020ffdc03490233ca72d879"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/borischen0203/interview/releases/download/v0.0.7/interview_0.0.7_Linux-ARM64.tar.gz"
-      sha256 "a79e1d0fe9acbd40a24e19c14f64bfde749c9b3ddea8c0935713af764c32a073"
+      url "https://github.com/borischen0203/interview/releases/download/v0.0.8/interview_0.0.8_Linux-ARM64.tar.gz"
+      sha256 "b0e0ba289198ed061a0d6af86846b326f558b9acac5d53efabfc385b0f6f18db"
     end
   end
 
